@@ -1,0 +1,94 @@
+:root {
+  --primary-color: #ff5400;
+  --description: #131318b2;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1440px;
+  font-family: "Mulish", sans-serif;
+}
+header {
+  padding: 2rem 7rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-title {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  color: #131318;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.nav-title span {
+  color: var(--primary-color);
+}
+nav ul {
+  list-style: none;
+
+  display: flex;
+}
+.home {
+  color: var(--primary-color);
+}
+nav ul a {
+  text-decoration: none;
+  margin-left: 2rem;
+  color: var(--Dark-02, #424247);
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1.2rem;
+  border-radius: 8px;
+}
+/* .form .input {
+  border-radius: 8px;
+  background: #fff;
+  color: #13131880;
+  border: 0;
+} */
+.select-box {
+  border-radius: 8px;
+  background: #fff;
+  color: #13131880;
+  border: 0;
+  padding: 1.2rem;
+}
+.form button {
+  background: #ff5400;
+  color: #fff;
+  font-weight: 700;
+}
+button i {
+  margin-right: 1.2rem;
+}
+.explore {
+  text-align: center;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+  background-size: cover;
+  border-radius: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5rem 10rem;
+}
+.explore h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+.explore p {
+  color: white;
+}
