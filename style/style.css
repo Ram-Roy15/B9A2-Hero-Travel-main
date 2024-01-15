@@ -7,17 +7,13 @@ body {
   margin: 0 auto;
   padding: 0;
   max-width: 1440px;
-  font-family: "Mulish", sans-serif;
+  font-family: "M.nav-bar ish", sans-serif;
 }
 header {
   padding: 2rem 7rem;
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav-title {
+
+.logo {
   display: flex;
   gap: 1.5rem;
   align-items: center;
@@ -25,18 +21,21 @@ nav {
   font-size: 2rem;
   font-weight: 800;
 }
-.nav-title span {
+.logo span {
   color: var(--primary-color);
 }
-nav ul {
+nav .nav-bar {
   list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 
   display: flex;
 }
 .home {
   color: var(--primary-color);
 }
-nav ul a {
+nav .nav-bar a {
   text-decoration: none;
   margin-left: 2rem;
   color: var(--Dark-02, #424247);
@@ -52,12 +51,7 @@ nav ul a {
   padding: 1.2rem;
   border-radius: 8px;
 }
-/* .form .input {
-  border-radius: 8px;
-  background: #fff;
-  color: #13131880;
-  border: 0;
-} */
+
 .select-box {
   border-radius: 8px;
   background: #fff;
@@ -91,4 +85,94 @@ button i {
 }
 .explore p {
   color: white;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+.menu li {
+  padding-left: 30px;
+}
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+}
+.menu .home {
+  color: orange;
+}
+.open-menu,
+.close-menu {
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: none;
+}
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+#check {
+  display: none;
+}
+.close-menu {
+  top: 55px;
+  right: 20px;
+}
+
+/* small device  */
+@media screen and (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    height: 100vh;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: #dad0cb;
+    transition: all 03s ease-in-out;
+  }
+  .menu li {
+    margin-top: 40px;
+  }
+  .menu li a {
+    padding: 10px;
+  }
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+  #check:checked ~ nav {
+    right: 0;
+  }
+  header {
+    padding: 10px;
+  }
+  .explore {
+    padding: 10px;
+  }
+  .form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .select-box {
+    margin-bottom: 10px;
+  }
+  .logo {
+    flex-direction: column;
+  }
+  .logo h2 {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+  .logo img {
+    margin-bottom: 0;
+  }
 }
