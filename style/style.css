@@ -1,3 +1,4 @@
+/* shared styles */
 :root {
   --primary-color: #ff5400;
   --description: #131318b2;
@@ -9,6 +10,19 @@ body {
   max-width: 1440px;
   font-family: "M.nav-bar ish", sans-serif;
 }
+.btn {
+  border-radius: 8px;
+  background: #ff5400;
+  border: 0;
+  padding: 14px 35px;
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+
+/* header styles */
 header {
   padding: 2rem 7rem;
 }
@@ -124,6 +138,32 @@ button i {
   right: 20px;
 }
 
+/* main section styles */
+.popular-tours {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 7rem;
+}
+.popular-tour-description h3 {
+  color: #131318;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.popular-tour-description p li {
+  color: rgba(19, 19, 24, 0.7);
+  font-weight: 400;
+}
+.popular-tour-description li {
+  margin-bottom: 24px;
+}
+.popular-tours img {
+  width: 100%;
+  padding-top: 40px;
+}
+
 /* small device  */
 @media screen and (max-width: 600px) {
   .menu {
@@ -174,5 +214,10 @@ button i {
   }
   .logo img {
     margin-bottom: 0;
+  }
+
+  .popular-tours {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
   }
 }
