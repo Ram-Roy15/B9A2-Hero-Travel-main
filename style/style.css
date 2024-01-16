@@ -6,6 +6,7 @@
 
 body {
   margin: 0 auto;
+  position: relative;
   padding: 0;
   max-width: 1440px;
   font-family: "M.nav-bar ish", sans-serif;
@@ -279,6 +280,83 @@ button i {
   margin-top: 30px;
   font-weight: 800;
 }
+.news-later {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+  gap: 24px;
+  margin-top: 80px;
+}
+input {
+  width: 393px;
+  height: 52px;
+  flex-shrink: 0;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 0;
+  padding: 10px;
+  background: rgba(19, 19, 24, 0.05);
+}
+.input-btn {
+  border-radius: 8px;
+  background: #ff5400;
+  color: white;
+  padding: 10px 85px;
+}
+.form-part {
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+}
+.form-part h2 {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.form-part p {
+  color: #5a5a5d;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+.form-part .line {
+  width: 393px;
+  height: 1px;
+  background: rgba(72, 72, 78, 0.1);
+}
+.discount-img {
+  position: relative;
+}
+.discount {
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 324px;
+  height: 120px;
+  transform: rotate(-19.628deg);
+  border-radius: 16px;
+  background-color: #ff5400;
+  margin-left: 340px;
+  z-index: 34;
+  top: 95.6%;
+}
+.discount h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 0;
+}
+.discount h5 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
 /* small device  */
 @media screen and (max-width: 600px) {
   .menu {
