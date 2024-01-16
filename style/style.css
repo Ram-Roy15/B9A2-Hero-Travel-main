@@ -412,6 +412,46 @@ footer .description {
   line-height: normal;
   margin: 100px;
 }
+.apps {
+  display: flex;
+  max-width: 1160px;
+  margin: 0 auto;
+  background-color: burlywood;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  border-radius: 16px;
+}
+.apps-des {
+  padding: 30px;
+}
+.apps-des h2 {
+  color: white;
+  font-size: 3rem;
+
+  font-weight: 800;
+}
+.apps-des h4 {
+  color: #fff;
+}
+.apps-des span h4 {
+  color: #ff5400;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.store h4 {
+  background-color: orange;
+  color: whitesmoke;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+
 /* small device  */
 @media screen and (max-width: 600px) {
   .menu {
@@ -562,5 +602,10 @@ footer .description {
   }
   header {
     max-width: 600px;
+  }
+  .apps {
+    flex-direction: column-reverse;
+    padding: 10px;
+    margin: 10px;
   }
 }
