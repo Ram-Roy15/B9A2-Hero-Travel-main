@@ -444,6 +444,7 @@ footer .description {
   }
   .form {
     grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
   }
   .select-box {
     margin-bottom: 10px;
