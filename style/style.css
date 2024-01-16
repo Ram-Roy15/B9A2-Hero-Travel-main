@@ -10,6 +10,16 @@ body {
   max-width: 1440px;
   font-family: "M.nav-bar ish", sans-serif;
 }
+.tittle {
+  color: #131318;
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+.caption {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+  font-weight: 400;
+}
 img {
   width: 100%;
 }
@@ -176,19 +186,19 @@ button i {
   font-weight: 400;
 }
 .popular-tour-description li {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 .popular-tours img {
   width: 100%;
-  padding-top: 40px;
+  padding-top: 2.8rem;
 }
 /* destination srction  */
 .row {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 14px;
-  margin-bottom: 14px;
+  gap: 1rem;
+  margin-bottom: 1rem;
   position: relative;
 }
 
@@ -203,6 +213,72 @@ button i {
   font-weight: 800;
 }
 
+/* why chose section  */
+.choose-reason {
+  text-align: center;
+}
+.choose-reason h2 {
+  color: #131318;
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+.facility {
+  display: flex;
+  /* flex: 1; */
+  gap: 1.8rem;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 2rem 6.25rem;
+}
+.facility-1,
+.facility-2,
+.facility-3 {
+  width: 35rem;
+  height: 17rem;
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+.facility-1 > div {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.facility-2 {
+  border: 1px solid rgba(79, 81, 82, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+.facility-2 > div {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.facility-3 > div {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.facility-3 {
+  margin: 0 auto;
+}
+.facility-3 h3 {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.facility img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.facility-3 img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.facility h3 {
+  color: #131318;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  font-weight: 800;
+}
 /* small device  */
 @media screen and (max-width: 600px) {
   .menu {
@@ -271,5 +347,31 @@ button i {
   .row img {
     width: 330px;
     height: 175.393px;
+  }
+  .facility {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .facility-2,
+  .facility-1 {
+    padding: 10px;
+    margin-left: 10px;
+    width: 90%;
+    height: 50%;
+  }
+  .facility-3 {
+    padding: 10px;
+    margin-left: 10px;
+    width: 90%;
+    height: 50%;
+  }
+  .choose-reason {
+    padding: 10px;
+  }
+  .chosse-description {
+    padding: 10px;
+  }
+  .facility-3 {
+    margin: 0;
   }
 }
