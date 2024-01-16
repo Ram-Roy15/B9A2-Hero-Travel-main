@@ -36,7 +36,6 @@ img {
   margin-top: 40px;
 }
 
-/* header styles */
 header {
   padding: 2rem 7rem;
 }
@@ -45,6 +44,12 @@ header {
   display: flex;
   gap: 1.5rem;
   align-items: center;
+}
+.logo img {
+  height: 3rem;
+  width: 3.2rem;
+}
+.logo h2 {
   color: #131318;
   font-size: 2rem;
   font-weight: 800;
@@ -449,9 +454,7 @@ footer .description {
   .select-box {
     margin-bottom: 10px;
   }
-  .logo {
-    flex-direction: column;
-  }
+
   .logo h2 {
     margin-top: 0;
     font-size: 1rem;
@@ -459,7 +462,21 @@ footer .description {
   .logo img {
     margin-bottom: 0;
   }
-
+  .logo {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    text-align: center;
+  }
+  .logo img {
+    height: 3rem;
+    width: 2.5rem;
+  }
+  .logo h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 800;
+  }
   .popular-tours {
     grid-template-columns: repeat(1, 1fr);
     padding: 20px;
@@ -494,6 +511,7 @@ footer .description {
     width: 90%;
     height: 50%;
   }
+
   .choose-reason {
     padding: 10px;
   }
@@ -508,9 +526,6 @@ footer .description {
     padding: 10px;
   }
   .discount {
-    /* position: absolute;
-  color: white;
-  text-align: center; */
     width: 200px;
     height: 62px;
     transform: rotate(-19.628deg);
@@ -544,5 +559,8 @@ footer .description {
   }
   footer .description {
     padding: 10px;
+  }
+  header {
+    max-width: 600px;
   }
 }
