@@ -330,9 +330,7 @@ input {
   height: 1px;
   background: rgba(72, 72, 78, 0.1);
 }
-.discount-img {
-  position: relative;
-}
+
 .discount {
   position: absolute;
   color: white;
@@ -343,8 +341,7 @@ input {
   border-radius: 16px;
   background-color: #ff5400;
   margin-left: 340px;
-  z-index: 34;
-  top: 95.6%;
+  margin-top: -170px;
 }
 .discount h3 {
   font-size: 2rem;
@@ -356,7 +353,60 @@ input {
   font-weight: 800;
   margin-bottom: 0;
 }
+footer {
+  margin-top: 80px;
+}
+.footer-img {
+  width: 2.5rem;
+  height: 46.673px;
+}
+.footer-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.footer-name h4 {
+  color: var(--Dark-01, #131318);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.footer-name span {
+  color: #ff5400;
 
+  font-size: 2rem;
+
+  font-weight: 800;
+}
+footer .description {
+  color: #5a5a5d;
+  margin-top: 0;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+.social-link {
+  text-align: center;
+}
+.icon {
+  padding: 10px;
+  margin-bottom: 40px;
+}
+.copy {
+  text-align: center;
+  color: #131318;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin: 100px;
+}
 /* small device  */
 @media screen and (max-width: 600px) {
   .menu {
@@ -451,5 +501,47 @@ input {
   }
   .facility-3 {
     margin: 0;
+  }
+  .news-later {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .discount {
+    /* position: absolute;
+  color: white;
+  text-align: center; */
+    width: 200px;
+    height: 62px;
+    transform: rotate(-19.628deg);
+    border-radius: 8px;
+    padding: 10px;
+    margin-left: 130px;
+    margin-top: -120px;
+  }
+  .discount h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0;
+    padding-bottom: 5px;
+  }
+  .discount h5 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 4px;
+  }
+  input {
+    width: 300px;
+    height: 52px;
+  }
+  .form-part {
+    padding: 10px;
+    margin: 10px;
+  }
+  .form-part .line {
+    width: 350px;
+  }
+  footer .description {
+    padding: 10px;
   }
 }
